@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@500;700&display=swap');
+
+/* Base layout */
+body {
+    background-color: #dedede;
+    color: #111;
+    font-family: "Libre Baskerville", Georgia, serif;
+    line-height: 1.65;
+}
+
+/* Page wrapper */
+#page {
+    max-width: 920px;
+    margin: 50px auto;
+    padding: 60px 70px;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* Editorial label */
+header h1 {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 5px 12px;
+    margin-bottom: 20px;
+}
+
+/* Main title */
+header h2 {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Subtitle */
+header p {
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+/* Editorial columns */
+main {
+    column-count: 2;
+    column-gap: 42px;
+}
+
+/* Body text */
+main p {
+    font-size: 15px;
+    margin-bottom: 1.3em;
+    text-align: justify;
+}
+
+/* Section headings */
+main h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin: 2em 0 0.6em;
+    break-after: avoid;
+}
+
+/* Quotation styling */
+q {
+    font-style: italic;
+}
+
+/* Prevent column breaks */
+header, h4 {
+    break-inside: avoid;
+}
